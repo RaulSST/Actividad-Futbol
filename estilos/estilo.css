@@ -1,0 +1,122 @@
+body{
+    font-family: 'Lato', sans-serif; /* Tipo de fuente: 'Lato' */
+    /* Añade un espacio de 50px al final de la página */
+    padding-bottom: 4130px;
+}
+
+header{
+    background-color: #673ab7;
+    padding: 10px;
+    margin:50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+    color:white;
+}
+
+#logo-liga{
+    /* Este elemento posicionado de manera absoluta se sale del flujo normal del documento y no ocupa espacio, 
+    lo que significa que puede superponerse en "linea" con otros elementos */
+    position: absolute;
+    left: 140px;
+    height: 120px;
+    padding: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  /* Ancho igual al 100% del ancho de la ventana del navegador */
+    height: 100vh; /* Altura igual al 100% de la altura de la ventana del navegador */
+}
+
+#nombre-liga, #jornada-actual {
+    text-align: center;
+}
+
+#equipos{
+    width: 1320px;
+    height: auto;
+    margin: auto;
+}
+
+.equipo{
+    box-sizing: border-box; /* Añade esta línea */
+    display: inline-block;
+    vertical-align: top; /* Los divs comienzan desde la misma "linea" */
+    border-radius: 10px; /* Ajusta el radio del borde redondeado */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5); /* Ajusta la sombra */
+    height: 650px;
+    width: 380px;
+    margin: 30px;
+    padding: 22px;  
+}
+
+.fundacion{
+    color: white;
+    background-color: #673ab7;
+    text-align: center;
+    font-size: 1.2em;
+    height: 22px;
+    margin: 5px;
+    padding: 5px;
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+.equipo-nombre{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    padding: 18px;
+    font-size: 2.3em;
+}
+
+.equipo-imagen{
+    height: 120px;
+    display: block;
+    margin: auto;
+}
+
+.equipo-estadio{
+    color: #673ab7;
+    text-align: center;
+    border-top: 2px solid #673ab7; 
+    border-bottom: 2px solid #673ab7;
+    margin: 5px;
+    margin-top: 15px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.competicion-p{
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+    font-size: 1.2em;
+}
+
+.equipo-competiciones{
+    text-align: center;
+}
+
+.competicion-logo{  
+    height: 70px;
+    margin: 7px;
+}
+
+.equipo-boton{
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #673ab7;
+    height: 30px;
+    width: 70px;
+    font-size: 1.0em;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 7.5%;
+    font-weight: bold;
+}
